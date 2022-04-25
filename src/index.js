@@ -49,6 +49,14 @@ app.use((req, res, next) => {
 //app.use(require('./routes/users'));
 app.use(require('./routes/registrar'));
 app.use(require('./routes/publicar'));
+app.use(require('./routes/index'));
+app.use(require('./routes/login'));
+app.use(require('./routes/menu'));
+app.use(require('./routes/quejar'));
+app.use(require('./routes/quejas'));
+app.use(require('./routes/seguimiento'));
+app.use(require('./routes/verempleados'));
+
 // Static Files
 
 app.use(express.static(path.join(__dirname, 'public')));
